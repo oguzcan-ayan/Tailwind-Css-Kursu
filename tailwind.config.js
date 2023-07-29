@@ -14,6 +14,9 @@ module.exports = {
     content: {
       test100: "url('./img/a1.png')",
       test300: "url('./img/a2.png')",
+      },
+      fontFamily:{
+        poppins : ['Poppins', 'sans-serif']
       }
     },
   },

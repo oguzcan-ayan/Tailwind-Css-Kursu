@@ -7,9 +7,12 @@
     <title>Tailwind Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../dist/img/favicon.ico" type="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="min-h-screen bg-primary-500">
+<body class="min-h-screen bg-primary-500 font-poppins">
     <header class="bg-primary-100 p-5 text-white top-0 sticky z-10">
         <section class="w-5/6 mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">
@@ -31,7 +34,7 @@
         </section>
     </header>
     <main class="w-5/6 mx-auto my-24">
-        <section id="hero" class="flex sm:flex-row flex-col-reverse justify-center gap-20">
+        <section id="hero" class="flex lg:flex-row flex-col-reverse justify-center gap-20">
             <div class="text-white flex flex-col">
                 <h1 class="font-semibold text-5xl leading-snug">
                     Let's learn <br>
@@ -41,7 +44,7 @@
                     <span class="text-primary-300">Udemy</span>
                 </h1>
                 <p class="text-gray-400 mt-6 font-semibold text-xl">
-                    The main reason why this course was built<br class="sm:hidden"> is to help you
+                    The main reason why this course was built<br class="hidden lg:block"> is to help you
                     to achieve your goal by using Tailwind Css
                 </p>
             </div>
@@ -70,7 +73,7 @@
             <p class="relative text-lg font-light m-auto before:hidden sm:before:block
                 before:absolute before:content-test100 before:-top-16 before:-right-16 before:opacity-25">
                 "Flowbite is just awesome. It contains tons of predesigned components and pages
-                starting from login screen <br class="sm:block hidden"> to complex dashboard. Perfect
+                starting from login screen <br class="lg:block hidden"> to complex dashboard. Perfect
                 choice for your next SaaS application."
             </p>
             <p class="italic text-right sm:mr-20">Micheal Gough <span class="text-sm">-CEO at Google</span></p>
@@ -78,7 +81,7 @@
             <p class="relative text-lg font-light m-auto before:absolute before:hidden before:opacity-25 
                 sm:before:block before:content-test300 before:-top-12 before:-right-16 mt-20">
                 "This is a very complex and beautiful set of elements. Under the hood it comes with the
-                best things from 2 <br class="sm:block hidden"> different worlds: Figma and Tailwind.”
+                best things from 2 <br class="lg:block hidden"> different worlds: Figma and Tailwind.”
             </p>
             <p class="italic text-right sm:mr-20">Lana Byrd <span class="text-sm">-Software Engineer at Tesla
                 </span></p>
@@ -105,7 +108,7 @@
         </section>
     </main>
     <footer class="bg-primary-100 text-white">
-        <div class="flex flex-row items-center w-5/6 mx-auto py-6">
+        <div class="flex flex-row items-center w-5/6 mx-auto py-6 gap-x-12">
             <div class="flex flex-col gap-4 sm:basis-1/3 items-center">
                 <div class="flex gap-2 items-center">
                     <a href="#hero" class="flex gap-3">
@@ -117,22 +120,25 @@
                     Learn coding with us!</p>
                 <div class="flex gap-6">
                     <div class="border-white border rounded-full p-2">
-                        <img src="img/facebook.png" alt="facebook logo">
+                        <a href="#facebook"><img src="img/facebook.png" alt="facebook logo"></a>
                     </div>
                     <div class="border-white border rounded-full p-2">
-                        <img src="img/instagram.png" alt="instagram logo">
+                        <a href="#instagram"><img src="img/instagram.png" alt="instagram logo"></a>
                     </div>
                     <div class="border-white border rounded-full p-2">
-                        <img src="img/twitter.png" alt="twitter logo">
+                        <a href="#twitter"><img src="img/twitter.png" alt="twitter logo"></a>
+                    </div>
+                    <div class="border-white border rounded-full p-2">
+                        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="hidden sm:flex flex-row basis-2/3 gap-20 items-start">
                 <div class="flex flex-col gap-2">
                     <h1 class="text-xl font-semibold">Resources</h1>
-                    <p class="text-sm">Download</p>
-                    <p class="text-sm">Help Center</p>
-                    <p class="text-sm">Guide Book</p>
+                    <p class="text-sm">Download <a href="#download" class="text-lg"><i class="fa-solid fa-download"></i></a></p>
+                    <p class="text-sm">Help Center <a href="#help" class="text-lg"><i class="fa-solid fa-hand-holding-hand"></i></a></p>
+                    <p class="text-sm">Guide Book <a href="#guide-book" class="text-lg"><i class="fa-solid fa-book"></i></a></p>
                     <p class="text-sm">App Directory</p>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -140,19 +146,19 @@
                     <p class="text-sm">My Languages</p>
                     <p class="text-sm">Beginner</p>
                     <p class="text-sm">Custom Stories</p>
-                    <p class="text-sm">Instagram Post</p>
+                    <p class="text-sm">Instagram Post <a href="#post-instagram" class="text-lg border border-white rounded-full p-2"><i class="fa-solid fa-hashtag"></i></a></p>
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1 class="text-xl font-semibold">Company</h1>
                     <p class="text-sm">Classes</p>
                     <p class="text-sm">About Us</p>
-                    <p class="text-sm">Success</p>
-                    <p class="text-sm">Information</p>
+                    <p class="text-sm mb-2">Success <a href="#success" class="text-lg border border-white rounded-full p-2"><i class="fa-solid fa-check"></i></a></p>
+                    <p class="text-sm">Information <a href="#info" class="text-lg border border-white rounded-full p-2"><i class="fa-solid fa-info"></i></a></p>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="hidden lg:flex flex-col gap-2">
                     <h1 class="text-xl font-semibold">Get App</h1>
-                    <p class="text-sm">App Store</p>
-                    <p class="text-sm">Google Play</p>
+                    <p class="text-sm">App Store <a href="#app-store" class="text-2xl"><i class="fa-brands fa-app-store"></i></a></p>
+                    <p class="text-sm">Google Play <a href="#google-play-store" class="text-2xl"><i class="fa-brands fa-google-play"></i></a></p>
                 </div>
             </div>
         </div>
