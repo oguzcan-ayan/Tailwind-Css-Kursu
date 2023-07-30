@@ -581,14 +581,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-14{
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-}
-
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mt-20{
@@ -597,14 +591,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -634,10 +620,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-3{
-  width: 0.75rem;
 }
 
 .basis-2\/3{
@@ -769,10 +751,6 @@ video {
 
 .p-5{
   padding: 1.25rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-12{
@@ -972,6 +950,54 @@ video {
   outline-offset: 2px;
 }
 
+@media (max-width: 1330px){
+  .max-\[1330px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px){
+  .max-\[1000px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 990px){
+  .max-\[990px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 940px){
+  .max-\[940px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 930px){
+  .max-\[930px\]\:hidden{
+    display: none;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .max-md\:w-full{
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px){
+  .max-\[750px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  .max-\[500px\]\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:mr-20{
     margin-right: 5rem;
@@ -1009,6 +1035,17 @@ video {
   .sm\:before\:block::before{
     content: var(--tw-content);
     display: block;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
